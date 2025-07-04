@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Aziz Fauzi | AI Web App Developer</title>
+  
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ✅ LINKED STYLESHEET -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Optional: Scroll Spy Highlight -->
+  <style>
+    nav a.active {
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header">
+      <h1>Aziz Fauzi</h1>
+      <nav id="navbar">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="toggle-theme" title="Toggle Dark Mode">🌓</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Hi, I'm Aziz 👋</h2>
+      <p>I build AI-powered web applications using Python, LLMs, and modern frameworks.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h3 class="section-title">🚀 Projects</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>AI News Summarizer</h4>
+          <p>Scrapes news, processes content with GPT-4, and displays daily summaries.</p>
+          <p class="tech">Tech: Python, FastAPI, OpenAI API</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="card">
+          <h4>AI Chatbot for Internal Data</h4>
+          <p>Chatbot using RAG to answer internal document questions.</p>
+          <p class="tech">Tech: LangChain, Pinecone, Streamlit</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h3 class="section-title">🙋‍♂️ About Me</h3>
+      <p>I’m an AI developer turning ideas into web apps using GPT-4, LangChain, and no-code tools.</p>
+      <p>Exploring RAG agents and AI product building.</p>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section" data-aos="fade-up">
+    <div class="container">
+      <h3 class="section-title">📝 Blog</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Building an AI News Summarizer</h4>
+          <p>How I built a web app to scrape and summarize news using GPT-4.</p>
+          <p class="meta">Jan 15, 2025 · 5 min read</p>
+          <a href="blog/ai-news-summarizer.html">Read More →</a>
+        </div>
+        <div class="card">
+          <h4>What is RAG & Why It Matters</h4>
+          <p>Retrieval-Augmented Generation explained with real use cases.</p>
+          <p class="meta">Jan 8, 2025 · 4 min read</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h3 class="section-title">📬 Contact Me</h3>
+      <p>Want to collaborate or chat about a project?</p>
+      <p>
+        📧 <a href="mailto:fauzi.aziz.af@gmail.com">fauzi.aziz.af@gmail.com</a><br />
+        🔗 <a href="https://linkedin.com/in/azizfauzi">LinkedIn</a> |
+        <a href="https://github.com/azizfauzi">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Aziz Fauzi. Built with ❤️ and AI.</p>
+    </div>
+  </footer>
+
+  <!-- 🔝 Back to Top Button -->
+  <button id="backToTop" title="Back to Top">⬆</button>
+
+  <!-- JS Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+
+</html>

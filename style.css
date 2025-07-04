@@ -1,0 +1,261 @@
+/* === BASE THEME COLORS === */
+:root {
+  --primary: #2563eb;
+  --background: #ffffff;
+  --text: #1e293b;
+  --light: #f1f5f9;
+}
+
+[data-theme="dark"] {
+  --background: #0f172a;
+  --text: #f1f5f9;
+  --light: #1e293b;
+}
+
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* === CONTAINERS === */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+/* === HEADER === */
+header {
+  background-color: var(--light);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* === DARK MODE TOGGLE === */
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* === HERO === */
+.hero {
+  padding: 6rem 0 4rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* === PROJECTS & BLOG === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.card .tech {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.card .meta {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* === CONTACT === */
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: var(--light);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* === BACK TO TOP BUTTON === */
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* === DARK MODE === */
+[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] header,
+[data-theme="dark"] footer,
+[data-theme="dark"] .card {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+[data-theme="dark"] nav a {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] nav a.active {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .btn:hover {
+  background-color: #0ea5e9;
+}
+
+[data-theme="dark"] a {
+  color: #60a5fa;
+}
+
+[data-theme="dark"] #backToTop {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
