@@ -7,7 +7,7 @@ Built with pure HTML, CSS, and JavaScript — fast, lightweight, and fully respo
 
 ## ✨ Live Preview
 
-🔗 [Visit Website](https://yourusername.github.io/your-repo-name)  
+🔗 [Visit Website](https://azizfauzi.github.io/Porto/))  
 *(Update this link after deploying to GitHub Pages)*
 
 ---
